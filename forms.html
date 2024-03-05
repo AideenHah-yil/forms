@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <title> HTML FORMS</title> 
+       <style>
+        fieldset {
+            width: 200px; 
+        }
+    </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+
+                        <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>            
+
+            <fieldset>
+                <legend>Interests</legend>
+                <input type="checkbox" id="music"  name="interest" value="music">
+              <label for="music">Music</label>
+
+              <input type="checkbox" id="sports"  name="interest" value="sports">
+              <label for="sports">Sports</label>
+
+              <input type="checkbox" id="painting"  name="interest" value="painting">
+              <label for="painting">Painting</label>
+            </fieldset>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+
+            <button type="submit">Submit</button>
+        
+        </form>
+    </body>
+</html>
